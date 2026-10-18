@@ -35,6 +35,14 @@ I am interested in electronics and 3D printing, and this project gives me an opp
 
 During this stage, I am focusing on the mechanical design. My goal is to create parts that can be 3D printed, assembled, and tested with the real electronics.
 
+## Firmware Development
+
+I am currently working on the firmware for the ESP32, which will read data from the IR sensors and control the electromagnetic coils.
+
+Once the firmware is ready, I plan to upload it to my [Electrotrack electronics repository](https://github.com/maslohaslo1234-spec/electrotrack), which I created during Week 1.
+
+The firmware is still under development and has not been tested with the complete system yet.
+
 ## PCB enclosure
 
 I designed the enclosure around the 100 × 83.5 mm PCB. I imported the PCB model into Onshape to check where the components and connectors end up. The enclosure has:
