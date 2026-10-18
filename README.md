@@ -1,6 +1,6 @@
 # Electrotrack CAD
 
-<img width="1219" height="803" alt="Zrzut ekranu 2026-10-18 184537" src="https://github.com/user-attachments/assets/39c8a4fb-1f71-41f3-855d-e2e612bf0795" />
+<img width="1271" height="811" alt="assembly" src="https://github.com/user-attachments/assets/2426da56-25cd-49e5-9ec3-12dea68f4e0b" />
 
 
 This repository has the mechanical design of my Electrotrack project: the enclosure for the PCB and the parts of the circular track. I modelled everything in Onshape during Week 2 of Hack Club Half Life.
@@ -9,9 +9,31 @@ The electronics (schematic, PCB and firmware) are in a separate repository:
 
 [Electrotrack electronics](https://github.com/maslohaslo1234-spec/electrotrack)
 
-## Why I’m building it
+## What is Electrotrack?
 
-Electrotrack is a small electromagnetic ball accelerator, and this is its mechanical side. I wanted to learn how to design parts around a real PCB: check where the components and connectors are, make them reachable from outside, and get the parts ready for a first test print.
+Electrotrack is an experimental electromagnetic ball accelerator that I am building. The goal is to accelerate a metal ball around a circular track using electromagnetic coils.
+
+The project combines a custom PCB, an ESP32 microcontroller, IR sensors, electromagnetic coils, and 3D-printed mechanical parts.
+
+This repository contains the mechanical design of the project, including the PCB enclosure, track segments, coil formers, and sensor mounts. The electronics are documented in a separate repository.
+
+## How is it supposed to work?
+
+The idea is to place electromagnetic coils along a circular track. IR sensors will detect when the ball approaches each coil, and the ESP32 will use this information to control when the coils are activated.
+
+When a coil is energized at the right moment, its magnetic field attracts the ball and helps accelerate it. By activating the coils in sequence, the system is intended to keep the ball moving around the track.
+
+The 3D-printed parts are important because they hold the coils and sensors in position, guide the ball, and provide mounting points for the electronics.
+
+This is still a prototype, so the complete system has not been tested yet.
+
+## Why am I building it?
+
+I was inspired by Hyperspace Pirate's electromagnetic accelerator project and wanted to try designing my own version.
+
+I am interested in electronics and 3D printing, and this project gives me an opportunity to combine them. I want to learn more about electromagnetic acceleration, PCB design, microcontroller programming, and designing mechanical parts that work together.
+
+During this stage, I am focusing on the mechanical design. My goal is to create parts that can be 3D printed, assembled, and tested with the real electronics.
 
 ## PCB enclosure
 
@@ -85,7 +107,7 @@ This is still a CAD prototype. The enclosure has not been printed or tested.
 
 The BOM and the journal are synchronized from [Half Life](https://halflife.hackclub.com/), so changes I make to them here can be overwritten.
 
-I am making an effort to document my work in English, but my English is still limited. I use a AI to help explain the project and describe my progress.
+I am making an effort to document my work in English, but my English is still limited. I use AI tools to help translate and improve the English in my project documentation.
 
 ## Third-party models
 
