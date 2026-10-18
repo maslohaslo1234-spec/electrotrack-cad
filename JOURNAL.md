@@ -15,7 +15,7 @@
 ## Contents
 
 1. [2026-10-15 – ## Week 2 – Entry 1: Designing the Electrotrack track](#2026-10-15-week-2-entry-1-designing-the-electrotrack-track)
-2. [2026-10-18 – Work session](#2026-10-18-work-session)
+2. [2026-10-18 – # Week 2 – Entry 2: Designing the PCB Enclosure and Updating the Assembly](#2026-10-18-week-2-entry-2-designing-the-pcb-enclosure-and-up)
 
 ## Design
 
@@ -58,8 +58,83 @@ The attached timelapse documents the CAD work from this session.
 
 [Timelapse](https://lookout.hackclub.com/api/media/2c44a37f-96df-4647-91fc-90ee6de6b48e/video.mp4)
 
-### 2026-10-18 – Work session
+### 2026-10-18 – # Week 2 – Entry 2: Designing the PCB Enclosure and Updating the Assembly
 
 **4.52h**
+
+# Week 2 – Entry 2: Designing the PCB Enclosure and Updating the Assembly
+
+During this session, I designed an enclosure for the Electrotrack PCB in Onshape. I added PCB mounting points, connector openings, and a window for the OLED display. I also imported the PCB model to check component positions and clearances in CAD.
+
+![PCB enclosure in Onshape](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/D1H5wjMaoqfsZfeTslugwWB4nIQcEzNR/205c906aa829a3fc89379a1306c04f65ae9f0210d42828746a72cb31cb871bd2.png)
+
+### Enclosure Design
+
+The enclosure consists of a base and a removable lid. The base has four mounting posts for the PCB and two external tabs for attaching the enclosure to a plywood base.
+
+Initially, I planned to use separate spacers under the PCB. However, I decided to replace them with integrated 3D-printed posts designed for M3 heat-set inserts. This reduces the number of loose parts during assembly and should make it easier to remove and reinstall the PCB without wearing out the plastic.
+
+The main body measures 110 × 93.5 mm. The base is 3 mm thick, while the walls and lid are both 2 mm thick. The design leaves approximately 3 mm of clearance between the PCB edges and the inner walls.
+
+### Importing the PCB from KiCad
+
+I exported the PCB assembly from KiCad as a STEP file and imported it into Onshape. The import created many separate tabs for individual components, so I had to remove the unnecessary tabs one by one while keeping the complete assembled PCB model.
+
+I also added reference models of the ESP32 and OLED display to help position the openings and check the available space inside the enclosure.
+
+### Enclosure Height
+
+To determine the required enclosure height, I considered the mounting posts, PCB thickness, and tallest components.
+
+The mounting posts are 8 mm high, the PCB is assumed to be 1.6 mm thick, and the tallest components in the imported model extend approximately 19 mm above the PCB.
+
+This gives a total height of about 28.6 mm from the inner floor. I chose a wall height of 32 mm to leave some additional space beneath the lid. However, the actual clearances still need to be checked with the physical components.
+
+### Lid Design
+
+The lid attaches to four external mounting posts using M3 screws and heat-set inserts.
+
+My initial rectangular lid did not fully cover the mounting holes. To fix this, I extended the corners with rounded tabs that align with the posts and added clearance holes for the screws.
+
+### Connector and Component Openings
+
+I added openings for the USB connection, XT30 connector, on/off switch wiring, IR sensor connectors, and screw terminals. I also created a window and mounting features for the OLED display.
+
+Near the L7805 voltage regulator, I left an opening for an external heatsink. Since the L7805 is a linear regulator, it dissipates part of the input power as heat when reducing the battery voltage to 5 V.
+
+### Updating the Assembly
+
+I added the enclosure to the assembly with the track to check how the parts fit together.
+
+Both the enclosure and the track are intended to be mounted on a plywood base. I designed mounting tabs with 3.4 mm clearance holes for the screws.
+
+![Track and enclosure assembly](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/D1H5wjMaoqfsZfeTslugwWB4nIQcEzNR/9421da1d709f499a1b2295b3f9e24f675eac45242f66ac8217ce1a4ab86d2e78.png)
+
+At this stage, everything is still in CAD. I haven't printed the parts yet, so the mounting arrangement and physical clearances have not been tested.
+
+### Exporting and Organizing Files
+
+I exported the STEP models and individual STL files, organized them in the CAD repository, and wrote a README to document the files.
+
+![CAD repository files](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/D1H5wjMaoqfsZfeTslugwWB4nIQcEzNR/46454b0bddd620b5478096afcf87256e5bc0c55ffdf1aff53c964235e15493d3.png)
+
+### Challenges
+
+One of the challenges was figuring out how to mount the IR sensors. I ended up designing separate rings with openings for the sensor components and adding them to the assembly. Each sensor ring is positioned just before its corresponding coil.
+
+I also had some difficulty deciding how to design the track supports. I rewatched Hyperspace Pirate's video for reference and used it as inspiration while developing my own design.
+
+![Zrzut ekranu 2026-10-18 184815](https://halflife.hackclub-assets.com/hackclub-half-life/sessions/D1H5wjMaoqfsZfeTslugwWB4nIQcEzNR/16a5bd1852f3d371e22fe9aa5717730d1a3016a0f0e4bbee0a8f0df0fd7a90e2.png)
+
+### Next Steps
+
+Next, I plan to:
+
+- Print a small test piece to check the fit of the M3 heat-set inserts.
+- Check the connector openings and cable clearances.
+- Verify the dimensions and mounting requirements of the selected heatsink.
+- Add the remaining fasteners and materials to the BOM.
+
+The attached timelapse shows the CAD work I completed during this session.
 
 [Timelapse](https://lookout.hackclub.com/api/media/e53adbf4-a76d-4d5a-9818-31db7e4087b1/video.mp4)
