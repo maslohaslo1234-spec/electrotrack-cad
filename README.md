@@ -1,5 +1,7 @@
 # Electrotrack CAD
 
+<img width="1348" height="893" alt="Zrzut ekranu 2026-10-18 102011" src="https://github.com/user-attachments/assets/66774ad2-af3f-4c55-b310-5494828e005e" />
+
 This repository has the mechanical design of my Electrotrack project: the enclosure for the PCB and the parts of the circular track. I modelled everything in Onshape during Week 2 of Hack Club Half Life.
 
 The electronics (schematic, PCB and firmware) are in a separate repository:
