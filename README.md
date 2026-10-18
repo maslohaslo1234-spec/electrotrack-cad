@@ -50,6 +50,15 @@ I designed the enclosure around the 100 × 83.5 mm PCB. I imported the PCB model
 
 So far I have the curved track segments, the coil formers and the IR sensor mounts. I put them together in one assembly in Onshape. Nothing is printed yet, so I don’t know how well the parts fit in real life.
 
+## Onshape CAD Model
+
+The complete CAD model is available in Onshape:
+
+[View Electrotrack CAD in Onshape](https://cad.onshape.com/documents/5df0b1e35f7d42ba30c57c01/w/6c10c4b5d57773fbd70dbcb3/e/2c0a8ce66aa1fa0771c34378)
+
+The document contains the PCB enclosure, track components, and assembly.
+
+
 ## Files
 
 ### STEP models
